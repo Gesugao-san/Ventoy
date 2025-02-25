@@ -1,0 +1,15 @@
+{
+    "control": [
+        { "VTOY_MENU_LANGUAGE": "ru_RU" },
+        { "VTOY_MENU_TIMEOUT": "30" },
+        { "VTOY_SECONDARY_BOOT_MENU": "30" }
+    ],
+    "theme":{
+        "file":[
+            "/ventoy/themes/ventoy-just-black/theme.txt",
+            "/ventoy/themes/ventoy-just-black/theme_legacy.txt"
+        ],
+        "default_file": 1,
+        "resolution_fit": 1
+    }
+}

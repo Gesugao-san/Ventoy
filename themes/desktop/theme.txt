@@ -1,0 +1,75 @@
+# Desktop Display
+title-text: "GRUB2 Desktop Theme.Bekleme süresi 20sn.  "
+title-color: "#FEFEFE"
+desktop-image: "background.jpg"
+# Show the boot menu
++ boot_menu {
+		left = 5%
+		width = 85%
+		top = 15%
+		height = 56%
+		item_color = "#FFFFFF"
+		selected_item_color = "#00FF00"
+		item_height = 32
+		item_padding = 15
+		item_spacing = 5
+		icon_width = 32
+		icon_height = 32
+		item_icon_space = 15
+		scrollbar = 5
+		scrollbar_width = 24
+}
+# Show progress 
++ circular_progress {
+                       id = "__timeout__"
+                       left = 27%
+                       top = 4%
+                       width = 52
+                       height = 52
+                       color = "white"
+                       center_bitmap = "black.png"
+                       tick_bitmap = "rotick.png"
+                       num_ticks = 20
+}
+# Show an informational message.
++ hbox {
+		top = 100%-25
+		left = 12%
+		 + label {text = "@VTOY_HOTKEY_TIP@" font = "Unicode" color = "#FFFFFF" align = "left"}
+		# + label {text = "F2: " font = "Unicode" color = "#FFFF1F" align = "left"}
+		# + label {text = "전원   " font = "Unicode" color = "#FFFFFF" align = "left"}
+		# + label {text = "F3: " font = "Unicode" color = "#FFFFAF" align = "left"}
+		# + label {text = "파일 크기 표시    " font = "Unicode" color = "#FFFFFF" align = "left"}
+		# + label {text = "F4: " font = "Unicode" color = "#FFFFAF" align = "left"}
+		# + label {text = "로컬 부팅    " font = "Unicode" color = "#FFFFFF" align = "left"}
+		# + label {text = "F5: " font = "Unicode" color = "#FFFFAF" align = "left"}
+		# + label {text = "도구    " font = "Unicode" color = "#FFFFFF" align = "left"}
+		# + label {text = "F6: " font = "Unicode" color = "#FFFFAF" align = "left"}
+		# + label {text = "개인 메뉴   " font = "Unicode" color = "#FFFFFF" align = "left"}
+}
+
++ hbox{ 
+    left = 50%
+    top = 85%-15
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_MEM_DISK@" color = "#E6F3FF" align = "left"} 
+}
+
+
++ hbox{ 
+    left = 45%
+    top = 85%-15
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_ISO_RAW@" color = "#E6F3FF" align = "left"} 
+}
+
+
++ hbox{ 
+    left = 90%
+    top = 55 
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_ISO_UEFI_DRV@" color = "red" align = "left"} 
+}
